@@ -12,6 +12,7 @@
   --form: #263138;
   --btn: #445964;
   --focus: #216081;
+  --hover: #4d7388;
 }
 body{
   height: 100vh;
@@ -61,6 +62,10 @@ body{
   color: var(--main-bg);
   cursor: pointer;
   outline: none;
+}
+#newtask button:hover {
+  background-color: var(--hover);
+  transition: .2s;
 }
 #tasks{
   background-color: var(--input);
