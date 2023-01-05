@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Manrope', sans-serif;
+}
+:root {
+  --input: #f5f5f5;
+  --main-bg: #2C3333;
+  --form: #395B64;
+  --btn: #A5C9CA;
+  --focus: #66babd;
+}
+body{
+  height: 100vh;
+  background: var(--main-bg);
+}
+.container {
+  width: 40%;
+  min-width: 450px;
+  position: absolute;
+  min-height: 100px;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  background: var(--input);
+  border-radius: 10px;
+}
+#newtask{
+  position: relative;
+  padding: 30px 20px;
+}
+#newtask input{
+  width: 75%;
+  height: 45px;
+  font-size: 15px;
+  border: 2px solid var(--main-bg);
+  padding: 12px;
+  color: var(--main-bg);
+  font-weight: 500;
+  position: relative;
+  border-radius: 5px;
+}
+#newtask input:focus{
+  outline: none;
+  border-color: var(--focus);
+}
+#newtask button{
+  position: relative;
+  float: right;
+  width: 20%;
+  height: 45px;
+  border-radius: 5px;
+  font-family: 'Poppins',sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: var(--btn);
+  border: none;
+  color: var(--main-bg);
+  cursor: pointer;
+  outline: none;
+}
+#tasks{
+  background-color: var(--input);
+  padding: 30px 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+  width: 100%;
+  position: relative;
+}
+.task{
+  background-color: var(--focus);
+  height: 50px;
+  margin-bottom: 8px;
+  padding: 5px 10px;
+  display: flex;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--main-bg);
+  cursor: pointer;
+}
+.task span{
+  font-size: 15px;
+  font-weight: 700;
+}
+.task button{
+  background-color: var(--main-bg);
+  color: var(--input);
+  height: 100%;
+  width: 40px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+@media (max-width: 449px) {
+  .container {
+    width: 30%;
+    min-width: 300px;
+  }
+}
